@@ -10,7 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <style>
+    <script type="module">
+  import { createChat } from 'https://embed.aivos.tech/chat-widget.es.js';
+
+  createChat({
+    apiUrl: 'https://your.api.com/chat/user123' // ← endpoint bạn xử lý chat
+  });
+</script>
+<style>
         :root {
             font-family: 'Inter', sans-serif;
         }
@@ -131,14 +138,14 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Recipe Card 1 -->
-                <div class="bg-[#f1f1f1] p-6 rounded shadow aos-init" data-aos="fade-right">
+                <div class="bg-[#f1f1f1] p-6 rounded shadow aos-init aos-animate" data-aos="fade-right">
                     <img class="recipe-img rounded" src="https://images.unsplash.com/photo-1602473812169-ede177b00aea?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw0fHxiZWVmfGVufDB8fHx8MTc0NjIzNjMzMXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Sliced meat on black plate">
                     <h3 class="mt-4 font-semibold text-xl">Grilled Beef Steak Recipe</h3>
                     <p class="mt-2 text-sm text-gray-600">Learn how to perfectly grill a steak with our secret marinade and technique.</p>
                     <a href="#" class="text-black underline mt-2 inline-block">Read more</a>
                 </div>
                 <!-- Recipe Card 2 -->
-                <div class="bg-[#f1f1f1] p-6 rounded shadow aos-init" data-aos="fade-left">
+                <div class="bg-[#f1f1f1] p-6 rounded shadow aos-init aos-animate" data-aos="fade-left">
                     <img class="recipe-img rounded" src="https://images.unsplash.com/photo-1608877907149-a206d75ba011?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw5fHxiZWVmfGVufDB8fHx8MTc0NjIzNjMzMXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Cooked food on brown wooden table">
                     <h3 class="mt-4 font-semibold text-xl">Slow Cooked Beef Roast</h3>
                     <p class="mt-2 text-sm text-gray-600">Discover a hearty recipe to create a melt-in-your-mouth beef roast that warms every heart.</p>
@@ -166,7 +173,7 @@
                         <li>Source of B-Vitamins</li>
                     </ul>
                 </div>
-                <div class="w-full md:w-1/2 aos-init" data-aos="fade-left">
+                <div class="w-full md:w-1/2 aos-init aos-animate" data-aos="fade-left">
                     <img class="nutrition-img rounded" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxMHx8Y3Vva2VkJTIwbWVhdCUyMG9uJTIwdHJheXxlbnwwfHx8fDE3NDYyMzYzMzF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Cooked meat on tray">
                 </div>
             </div>
@@ -278,7 +285,7 @@
     <!-- Contact Section -->
     <section id="contact" class="bg-[#f1f1f1]">
         <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
-            <h2 class="text-2xl font-bold lg:text-5xl pb-8">Contact Us</h2>
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">Condtact Us</h2>
             <p class="text-xl mb-8">Have any questions or need more information about our beef products? Get in touch with us.</p>
             <form class="bg-white p-8 rounded shadow max-w-lg mx-auto">
                 <div class="mb-4">
